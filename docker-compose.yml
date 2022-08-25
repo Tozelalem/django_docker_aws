@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     build: ./app
-    command: 770193336596.dkr.ecr.us-east-1.amazonaws.com/django_docker_aws:django_docker_aws_web
+    image: 770193336596.dkr.ecr.us-east-1.amazonaws.com/django_docker_aws:django_docker_aws_web
     volumes:
       - ./app/:/usr/src/app/
       - static_volume:/usr/src/app/static
